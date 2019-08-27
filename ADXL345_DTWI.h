@@ -44,7 +44,11 @@ class ADXL345 {
         powerctl_t power;
         dataformat_t format;
 
+
     public:
+        static const uint8_t INT1 = 1;
+        static const uint8_t INT2 = 2;
+
         static const uint8_t RANGE_2G = 0;
         static const uint8_t RANGE_4G = 1;
         static const uint8_t RANGE_8G = 2;
@@ -61,6 +65,13 @@ class ADXL345 {
         float readY();
         float readZ();
         void setRange(uint8_t g);
+
+        void enableSingleTap(int i, uint8_t t = 0x40, uint8_t d = 0x30, uint8_t l = 0x40);
+        void disableSingleTap();
+        void enableDoubleTap(int i);
+        void disableDoubleTap();
+
+        uint8_t getInterrupts();
 };
 
 #endif
