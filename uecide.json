@@ -1,17 +1,1 @@
-{
-    "name": "ADXL345_DTWI",
-    "provides": "ADXL345_DTWI.h",
-    "license": "LICENSE.md",
-    "readme": "README.md",
-    "description": "chipKIT DTWI library for the ADXL345 Accelerometer",
-    "category": "Sensors",
-    "subcategory": "Attitude",
-    "maintainer": "Matt Jenkins <matt@majenko.co.uk>",
-    "version": "1.0.1",
-    "family": "pic32",
-    "core": "chipkit",
-    "install": {
-        "ADXL345_DTWI.cpp": "/",
-        "ADXL345_DTWI.h": "/"
-    }
-}
+{"name":"ADXL345_DTWI","provides":"ADXL345_DTWI.h","license":"LICENSE.md","readme":"README.md","description":"chipKIT DTWI library for the ADXL345 Accelerometer","category":"Sensors","subcategory":"Attitude","maintainer":"Matt Jenkins <matt@majenko.co.uk>","version":"1.0.2","family":"pic32","core":"chipkit","install":{"library.properties":"\/","src":"\/"}}
