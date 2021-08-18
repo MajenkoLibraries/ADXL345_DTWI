@@ -34,8 +34,10 @@ class ADXL345 {
     private:
         DTWI *dtwi;
 
+    public:
         uint8_t readRegister(uint8_t reg);
         void writeRegister(uint8_t reg, uint8_t val);
+    private:
         int16_t readRaw(uint8_t h, uint8_t l);
 
         float declination;

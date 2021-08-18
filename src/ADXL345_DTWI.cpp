@@ -124,6 +124,9 @@ void ADXL345::begin() {
 
     writeRegister(REG_POWER_CTL, power.val);
 
+    writeRegister(REG_INT_ENABLE, 0);
+    writeRegister(REG_INT_MAP, 0);
+
 }
 
 int16_t ADXL345::readRawX() { return readRaw(REG_DATAX1, REG_DATAX0); }
